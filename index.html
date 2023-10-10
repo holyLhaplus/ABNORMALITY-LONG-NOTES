@@ -57,7 +57,7 @@
                 var obj = $("#table_int");
 
                 obj.html("");
-                $("<thead class='table-dark'><tr><th>Level</th><th>Title</th><th>Artist</th><th>Comment</th></tr></thead><tbody>")
+                $("<thead class='table-dark'><tr><th>Level</th><th>Title</th><th>Artist</th><th>タイプ1</th><th>タイプ2</th></tr></thead><tbody>")
                     .appendTo(obj);
                 var obj_sep = null;
                 for (var i = 0; i < info.length; i++) {
@@ -87,7 +87,7 @@
                     // Artist
                     $("<td width='40%'>" + info[i].artist + "</td>").appendTo(str);
 
-                    // Comment
+                    // タイプ1
                     $("<td width='10%'>" + info[i].タイプ1 + "</td>").appendTo(str);
                     str.appendTo(obj);
                     count++;
