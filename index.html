@@ -61,16 +61,16 @@
                     .appendTo(obj);
                 var obj_sep = null;
                 for (var i = 0; i < info.length; i++) {
-                    if (x != info[i].level) {
+                    if (x != info[i].class) {
                         if (obj_sep != null) {
                             obj_sep.html("<td colspan='4'>" + "<b>" + mark + x + " (" + count +
                                 "譜面)</b></td>");
                         }
-                        obj_sep = $("<tr class='table-dark' style='text-align:center' id='" + mark + info[i].level +
+                        obj_sep = $("<tr class='table-dark' style='text-align:center' id='" + mark + info[i].class +
                             "'></tr>");
                         obj_sep.appendTo(obj);
                         count = 0;
-                        x = info[i].level;
+                        x = info[i].class;
                     }
 
                     var str = $("<tr></tr>");
