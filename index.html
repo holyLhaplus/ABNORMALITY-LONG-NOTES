@@ -62,7 +62,7 @@
                 var obj = $("#table_int");
 
                 obj.html("");
-                $("<thead class='table-info'><tr><th>CLASS</th><th>TITLE</th><th>ARTIST</th><th>TYPE1</th><th>TYPE2</th></tr></thead><tbody>")
+                $("<thead class='table-dark'><tr><th>CLASS</th><th>TITLE</th><th>ARTIST</th><th>TYPE1</th><th>TYPE2</th></tr></thead><tbody>")
                     .appendTo(obj);
                 var obj_sep = null;
                 for (var i = 0; i < info.length; i++) {
@@ -71,7 +71,7 @@
                             obj_sep.html("<td colspan='5'>" + "<b>" + mark + x + " (" + count +
                                 "譜面)</b></td>");
                         }
-                        obj_sep = $("<tr class='table-dark' style='text-align:center' id='" + mark + info[i].level +
+                        obj_sep = $("<tr class='table-primary' style='text-align:center' id='" + mark + info[i].level +
                             "'></tr>");
                         obj_sep.appendTo(obj);
                         count = 0;
@@ -108,7 +108,7 @@
                 $("</tbody>").appendTo(obj);
 
                 if (obj_sep != null) {
-                    obj_sep.html("<td class='table-info' style='text-align:center' colspan='5'>" + "<b>" + mark + x +
+                    obj_sep.html("<td class='table-primary' style='text-align:center' colspan='5'>" + "<b>" + mark + x +
                         " (" + count + "譜面)</b></td>");
                 }
             }
