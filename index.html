@@ -26,7 +26,7 @@
 
     <div class="container">
 
-        <div class="alert alert-info mb-3" role="alert">
+        <div class="alert alert-info-subtle mb-3" role="alert">
             <p>難易度表の読み込みと表示に数秒かかります。</p>
             <hr>
             <pre class="mb-0">提案不可。掲載してほしい差分について管理人の見えるところで騒いでいただければ掲載される可能性があります。</pre>
@@ -43,7 +43,7 @@
 
         <!--ここから難易度表本体-->
         <div>
-            <table class="table table-info table-striped table-hover" id="table_int">
+            <table class="table table-light table-striped table-hover" id="table_int">
             </table>
         </div>
         <script language="javascript" type="text/javascript">
@@ -62,7 +62,7 @@
                 var obj = $("#table_int");
 
                 obj.html("");
-                $("<thead class='table-dark'><tr><th>CLASS</th><th>TITLE</th><th>ARTIST</th><th>TYPE1</th><th>TYPE2</th></tr></thead><tbody>")
+                $("<thead class='table-info'><tr><th>CLASS</th><th>TITLE</th><th>ARTIST</th><th>TYPE1</th><th>TYPE2</th></tr></thead><tbody>")
                     .appendTo(obj);
                 var obj_sep = null;
                 for (var i = 0; i < info.length; i++) {
@@ -108,7 +108,7 @@
                 $("</tbody>").appendTo(obj);
 
                 if (obj_sep != null) {
-                    obj_sep.html("<td class='table-dark' style='text-align:center' colspan='5'>" + "<b>" + mark + x +
+                    obj_sep.html("<td class='table-info' style='text-align:center' colspan='5'>" + "<b>" + mark + x +
                         " (" + count + "譜面)</b></td>");
                 }
             }
